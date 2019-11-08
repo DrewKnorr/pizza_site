@@ -16,6 +16,16 @@
     height:200px;
     overflow: visible;
 }
+
+.nav-bar a{
+    transition: all .2s ease-in-out;
+}
+
+.nav-bar a:hover{
+    transform: scale(1.1);
+}
+
+
 .nav-bar .left{
     display:flex;
     justify-content: space-between;
