@@ -1,88 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="./styles/nav-bar.css">
-        <link rel="stylesheet" href="./styles/slide-show.css">
-        <link rel="stylesheet" href="./styles/common.css">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet"> 
+<head>
 
-        <script src="./scripts/slide_show.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Order Form</title>
 
-        <title>Che Pizza</title>
-    </head>
-    <body>
-        <div class="nav-bar">
-            <a href="index.html">
-                <img src="./styles/photos/logo.png" id = 'nav-bar-logo'>
-            </a>
-            <div class="left">
-                <div class="links">
-                    <a href="index.html">Home</a>
-                </div>
-                <div class="links">
-                    <a href="#">Order Pizza</a>
-                </div>
-                <div class="links">
-                    <a href="./track-order.html">Track Your Order</a>
-                </div>
-            
+    <link rel="stylesheet" href="./styles/nav-bar.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/order-form.css">
+    
+
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="index.html">
+            <img src="./styles/photos/logo.png" id = 'nav-bar-logo'>
+        </a>
+        <div class="left">
+            <div class="links">
+                <a href="index.html">Home</a>
             </div>
-            <div class="right">
-                    <div class="links">
-                        <a href="about-us.html">About Us</a>
-                    </div>
-                    <div class="links">
-                        <a href="#">Contact Us</a>
-                    </div>
-
+            <div class="links">
+                <a href="order-form.html">Order Pizza</a>
             </div>
+            <div class="links">
+                <a href="./track-order.html">Track Your Order</a>
+            </div>
+        
         </div>
-        <div class="slide-show-container">
-            <div class="slide">
-                <img src="./styles/photos/hawaiian-add.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="./styles/photos/2-mediums-add.jpg" alt="">
-
-            </div>
-            <div class="slide">
-                <img src="./styles/photos/large.jpg" alt="">
-
-            </div>
-            <div class="button-wrapper">
-                <button class="order-now-bt"><a href="#">Order Now</a></button>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="links-warpper">
-
+        <div class="right">
                 <div class="links">
                     <a href="about-us.html">About Us</a>
                 </div>
                 <div class="links">
                     <a href="#">Contact Us</a>
                 </div>
+
+        </div>
+    </div>
+
+    <div class="squares-wrapper">
+        <div class="squares">
+
+            <div class="first-column-wrapper">
+                <div class="square">
+                    <div class="img-cheese-pizza">
+                        <img src="/styles/photos/order-form/cheesePizza.jpg">
+                    </div>
+
+                    <div class="cheese-pizza-text">
+                        Cheese
+                    </div>
+                </div>
+
+                <div class="square">
+                    <div class="img-pepperoni-pizza">
+                        <img src="/styles/photos/order-form/pepporoniPizza.jpg">
+                    </div>
+
+                    <div class="pepperoni-pizza-text">
+                        Pepperoni
+                    </div>
+                </div>
+
+                <div class="square">
+                    <div class="img-sausage-pizza">
+                        <img src="/styles/photos/order-form/easy-sausage-pizza.jpg">
+                    </div>
+
+                    <div class="sausage-pizza-text">
+                        Sausage
+                    </div>
+                </div>
+            </div>
+
+            <div class="second-column-wrapper">
+                <div class="square">
+                    <div class="img-hawaiian-pizza">
+                        <img src="/styles/photos/order-form/hawaiian.jpg">
+                    </div>
+
+                    <div class="hawaiian-pizza-text">
+                        Hawaiian
+                    </div>
+                </div>
+
+                <div class="square">
+                    <div class="img-supreme-pizza">
+                        <img src="/styles/photos/order-form/VeggiePizza.jpg">
+                    </div>
+
+                    <div class="supreme-pizza-text">
+                        Supreme
+                    </div>
+                </div>
+
+                <div class="square">
+                    <div class="img-unmade-pizza">
+                        <img src="/styles/photos/order-form/beingMadePizza.jpg">
+                    </div>
+
+                    <div class="unmade-pizza-text">
+                        Create Your Own
+                    </div>
+                </div>
             </div>
         </div>
-        <script>
-            var slideIndex = 0;
-            showSlides();
-            
-            function showSlides() {
-                var i;
-                var slides = document.getElementsByClassName("slide");
-                for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > slides.length) {slideIndex = 1}
-                slides[slideIndex-1].style.display = "block";
-                setTimeout(showSlides, 5000); // Change image every 2 seconds
-            } 
-        </script>
-    </body>
+    </div>
 
+    <div class="process-order-button">
+        <button onclick="window.location.href = 'https:/';">Process Order</button>
+    </div>
+
+    <div class="footer">
+        <div class="links-warpper">
+
+            <div class="links">
+                <a href="about-us.html">About Us</a>
+            </div>
+            <div class="links">
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
