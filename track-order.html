@@ -5,12 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="./styles/nav-bar.css">
-        <link rel="stylesheet" href="./styles/slide-show.css">
+        <link rel="stylesheet" href="./styles/track-order.css">
         <link rel="stylesheet" href="./styles/common.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet"> 
-
-        <script src="./scripts/slide_show.js"></script>
-
+        
+        <script src="./scripts/find-order.js"></script>
+        <script  src="./scripts/slide_show.js"></script>
         <title>Che Pizza</title>
     </head>
     <body>
@@ -40,20 +40,25 @@
 
             </div>
         </div>
-        <div class="slide-show-container">
-            <div class="slide">
-                <img src="./styles/photos/hawaiian-add.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="./styles/photos/2-mediums-add.jpg" alt="">
+        <div class="track-order-wrapper">
+            <div class="track-order-form">
+                <div class="form" >
+                    <img src="./styles/photos/search_order.jpg" alt="" class="order-img">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" placeholder="First Name"><br>
+                    
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" placeholder="Last Name"><br>
+                    
+                    <label for="email">Email Adress:</label>
+                    <input type="text" id="email" placeholder="Email"><br>
+                    
+                    <label for="confimation">Confimation Number:</label>
+                    <input type="text" id="confimation" placeholder="Confimation Number"><br>
 
-            </div>
-            <div class="slide">
-                <img src="./styles/photos/large.jpg" alt="">
+                    <button type="submit" class="find_order" onclick="get_form()">Find My Order</button>
+                </div>
 
-            </div>
-            <div class="button-wrapper">
-                <button class="order-now-bt"><a href="#">Order Now</a></button>
             </div>
         </div>
         <div class="footer">
@@ -67,22 +72,7 @@
                 </div>
             </div>
         </div>
-        <script>
-            var slideIndex = 0;
-            showSlides();
-            
-            function showSlides() {
-                var i;
-                var slides = document.getElementsByClassName("slide");
-                for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > slides.length) {slideIndex = 1}
-                slides[slideIndex-1].style.display = "block";
-                setTimeout(showSlides, 5000); // Change image every 2 seconds
-            } 
-        </script>
+
     </body>
 
 </html>

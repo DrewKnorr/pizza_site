@@ -26,13 +26,14 @@
 }
 .nav-bar .links a{
     text-decoration:none;
+    color:white;
 }
 
 .nav-bar .left .links a{
     font-size:16pt;
 }
 
-.nav-bar .left .links a:hover{
+.nav-bar .links a:hover{
     color:gold;
 
 }
@@ -40,7 +41,7 @@
 .nav-bar .right{
     display:flex;
     justify-content: space-between;
-    width:15vw;
+    width:10vw;
     padding:25px;
     margin-right:10px;
 }
@@ -56,6 +57,12 @@
     border-top: 1px solid black;
     width:100%;
     background-color:#ce2b37;
+}
+
+.footer .links-warpper a{
+    text-decoration: none;
+    color:black;
+    
 }
 
 .footer .links-warpper{
