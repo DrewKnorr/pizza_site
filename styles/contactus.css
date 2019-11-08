@@ -1,0 +1,16 @@
+.contact_us_wrapper {
+    display: flex;
+    justify-content: center;
+
+}
+
+.storefront img {
+    height: 400px;
+    width: 300px;
+    margin: 30px
+}
+
+.contact_info {
+    margin: 30px;
+    font-size: 30px;
+}
