@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./styles/nav-bar.css">
+        <link rel="stylesheet" href="./styles/slide-show.css">
+        <link rel="stylesheet" href="./styles/common.css">
+        <script src="./scripts/slide_show.js"></script>
+        <title>Che Pizza</title>
+    </head>
+    <body>
+        <div class="nav-bar">
+            <img src="./styles/photos/logo.png" id = 'nav-bar-logo'>
+            <div class="left">
+                <div class="links">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="links">
+                    <a href="#">Order Pizza</a>
+                </div>
+                <div class="links">
+                    <a href="#">Track Your Order</a>
+                </div>
+            
+            </div>
+            <div class="right">
+                    <div class="links">
+                        <a href="#">About Us</a>
+                    </div>
+                    <div class="links">
+                        <a href="#">Contact Us</a>
+                    </div>
+                    <div class="links">
+                        <a href="#">Login</a>
+                    </div>
+            </div>
+        </div>
+        <div class="slide-show-container">
+            <div class="slide">
+                <img src="./styles/photos/hawaiian-add.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./styles/photos/2-mediums-add.jpg" alt="">
+
+            </div>
+            <div class="slide">
+                <img src="./styles/photos/large.jpg" alt="">
+
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="links-warpper">
+
+                <div class="links">
+                    <a href="#">About Us</a>
+                </div>
+                <div class="links">
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("slide");
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 4000); // Change image every 2 seconds
+            } 
+        </script>
+    </body>
+
+</html>
