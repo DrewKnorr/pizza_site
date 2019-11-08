@@ -1,0 +1,58 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.your_order_wrapper {
+    background-color: lightgray;
+    height: 300px;
+}
+
+.sub_header {
+    text-align: center;
+    text-decoration-line: underline;
+
+}
+
+.your_order_wrapper > .order_content {
+    margin-left: 150px;
+
+}
+.billing_wrapper {
+    background-color: lightgray;
+    height: 500px;
+}
+
+.billing_wrapper > .billing_content {
+    margin-left: 150px;
+}
+
+.billing_wrapper > .billing_content > .user_billing_content {
+    display: flex;
+    align-items: center;
+    
+}
+
+.billing_wrapper > .billing_content > .user_billing_content input {
+   width: 600px;
+   margin-left: 20px;
+}
+
+.order_button {
+    text-align: right;
+    margin-right: 100px;
+    justify-content: space-evenly;
+}
+
+.order_button > #submit_button {
+    font-size: 20px;
+    background-color: red;
+    height: 60px;
+    width: 300px;
+    transition-duration: 0.4s;
+}
+
+.order_button > #submit_button:hover {
+    background-color: black; 
+    color:red;
+}

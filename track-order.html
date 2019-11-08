@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./styles/nav-bar.css">
+        <link rel="stylesheet" href="./styles/track-order.css">
+        <link rel="stylesheet" href="./styles/common.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet"> 
+        
+        <script src="./scripts/find-order.js"></script>
+        <script  src="./scripts/slide_show.js"></script>
+        <title>Che Pizza</title>
+    </head>
+    <body>
+        <div class="nav-bar">
+            <a href="index.html">
+                <img src="./styles/photos/logo.png" id = 'nav-bar-logo'>
+            </a>
+            <div class="left">
+                <div class="links">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="links">
+                    <a href="./order-form.html">Order Pizza</a>
+                </div>
+                <div class="links">
+                    <a href="./track-order.html">Track Your Order</a>
+                </div>
+            
+            </div>
+            <div class="right">
+                    <div class="links">
+                        <a href="about-us.html">About Us</a>
+                    </div>
+                    <div class="links">
+                        <a href="#">Contact Us</a>
+                    </div>
+
+            </div>
+        </div>
+        <div class="track-order-wrapper">
+            <div class="track-order-form">
+                <div class="form" >
+                    <img src="./styles/photos/search_order.jpg" alt="" class="order-img">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" placeholder="First Name"><br>
+                    
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" placeholder="Last Name"><br>
+                    
+                    <label for="email">Email Adress:</label>
+                    <input type="text" id="email" placeholder="Email"><br>
+                    
+                    <label for="confimation">Confimation Number:</label>
+                    <input type="text" id="confimation" placeholder="Confimation Number"><br>
+
+                    <button type="submit" class="find_order" onclick="get_form()">Find My Order</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="links-warpper">
+
+                <div class="links">
+                    <a href="about-us.html">About Us</a>
+                </div>
+                <div class="links">
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

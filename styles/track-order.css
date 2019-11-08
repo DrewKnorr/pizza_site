@@ -1,0 +1,46 @@
+.track-order-wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding:65px;
+}
+
+.track-order-wrapper .track-order-form .form{
+    border:4px solid black;
+    width: 800px;
+    height: 300px;
+    padding:20px;
+    margin-bottom:4vw;
+    border-radius: 25px;
+}
+
+.track-order-wrapper .track-order-form .form .order-img{
+    width:200px;
+    height: 200px;
+    float:right;
+    border-radius:50%;
+    margin-right:30px;
+    background-color:black;
+    border:2px solid #008C45;
+}
+
+.track-order-wrapper .track-order-form .form label{
+    font-size:20px;
+    color:#ce2b37;
+    letter-spacing: 2px;
+}
+
+.track-order-wrapper .track-order-form .form input{
+    margin:15px;
+    width:200px;
+}
+
+.track-order-wrapper .track-order-form .form .find_order{
+    float:right;
+    margin:25px;
+    height:35px;
+    width:200px;
+    border-radius:5px;
+}
+
