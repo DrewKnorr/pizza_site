@@ -1,0 +1,12 @@
+.squares-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.squares-wrapper .squares .square .img-cheese-pizza img {
+    width: 20px;
+}
+
+.squares-wrapper .squares .square .img-pepperoni-pizza img {
+    width: 20px;
+}
