@@ -1,0 +1,38 @@
+.page-container {
+    display: flex;
+    justify-content: center;
+}
+
+.company-wrapper {
+    text-align: center;
+    font-size: 30px;
+    width: 500px;
+}
+
+.company-about-us-wrapper {
+    margin-top: 200px;
+}
+
+.page-container .content-wrapper {
+    width: 1000px;
+    display: flex;
+    align-items: center;
+}
+
+.page-container .content-wrapper .content-text-wrapper {
+    margin-top: 100px;
+}
+
+.page-container .content-wrapper p {
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 30px;
+}
+
+.page-container .content-wrapper img {
+    width: 650px;
+    height: 400px;
+    margin: 23px 40px 20px 0px;
+    float: left;
+    border: 5px solid grey;
+}
