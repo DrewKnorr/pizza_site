@@ -7,40 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Order Form</title>
 
-    <link rel="stylesheet" href="styles/nav-bar.css">
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/order-form.css">
+    <link rel="stylesheet" href="./styles/nav-bar.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/order-form.css">
+    
 
 </head>
 <body>
     <div class="nav-bar">
+        <a href="index.html">
+            <img src="./styles/photos/logo.png" id = 'nav-bar-logo'>
+        </a>
         <div class="left">
             <div class="links">
                 <a href="index.html">Home</a>
             </div>
-        
             <div class="links">
-                <a href="#">Order Pizza</a>
+                <a href="order-form.html">Order Pizza</a>
+            </div>
+            <div class="links">
+                <a href="./track-order.html">Track Your Order</a>
             </div>
         
-            <div class="links">
-                <a href="#">Track Your Order</a>
-            </div>
-                        
         </div>
-        
         <div class="right">
-            <div class="links">
-                <a href="#">About Us</a>
-            </div>
-        
-            <div class="links">
-                <a href="#">Contact Us</a>
-            </div>
-        
-            <div class="links">
-                <a href="#">Login</a>
-            </div>
+                <div class="links">
+                    <a href="about-us.html">About Us</a>
+                </div>
+                <div class="links">
+                    <a href="#">Contact Us</a>
+                </div>
+
         </div>
     </div>
 
@@ -50,7 +47,7 @@
             <div class="first-column-wrapper">
                 <div class="square">
                     <div class="img-cheese-pizza">
-                        <img src="/images/order-form/cheesePizza.jpg">
+                        <img src="/styles/photos/order-form/cheesePizza.jpg">
                     </div>
 
                     <div class="cheese-pizza-text">
@@ -60,7 +57,7 @@
 
                 <div class="square">
                     <div class="img-pepperoni-pizza">
-                        <img src="/images/order-form/pepporoniPizza.jpg">
+                        <img src="/styles/photos/order-form/pepporoniPizza.jpg">
                     </div>
 
                     <div class="pepperoni-pizza-text">
@@ -70,7 +67,7 @@
 
                 <div class="square">
                     <div class="img-sausage-pizza">
-                        <img src="/images/order-form/easy-sausage-pizza.jpg">
+                        <img src="/styles/photos/order-form/easy-sausage-pizza.jpg">
                     </div>
 
                     <div class="sausage-pizza-text">
@@ -82,7 +79,7 @@
             <div class="second-column-wrapper">
                 <div class="square">
                     <div class="img-hawaiian-pizza">
-                        <img src="/images/order-form/hawaiian.jpg">
+                        <img src="/styles/photos/order-form/hawaiian.jpg">
                     </div>
 
                     <div class="hawaiian-pizza-text">
@@ -92,7 +89,7 @@
 
                 <div class="square">
                     <div class="img-supreme-pizza">
-                        <img src="/images/order-form/VeggiePizza.jpg">
+                        <img src="/styles/photos/order-form/VeggiePizza.jpg">
                     </div>
 
                     <div class="supreme-pizza-text">
@@ -102,7 +99,7 @@
 
                 <div class="square">
                     <div class="img-unmade-pizza">
-                        <img src="/images/order-form/beingMadePizza.jpg">
+                        <img src="/styles/photos/order-form/beingMadePizza.jpg">
                     </div>
 
                     <div class="unmade-pizza-text">
@@ -114,16 +111,18 @@
     </div>
 
     <div class="process-order-button">
-        <button onclick="window.location.href = 'https:/';">Process Order</button>
+        <button><a href="checkout.html">Process Order</a></button>
     </div>
 
     <div class="footer">
-        <div class="links">
-            <a href="#">About Us</a>
-        </div>
-    
-        <div class="links">
-            <a href="#">Contact Us</a>
+        <div class="links-warpper">
+
+            <div class="links">
+                <a href="about-us.html">About Us</a>
+            </div>
+            <div class="links">
+                <a href="#">Contact Us</a>
+            </div>
         </div>
     </div>
 </body>
